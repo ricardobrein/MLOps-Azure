@@ -7,7 +7,11 @@ Se trata de un modelo de clasificación que ayuda a los profesionales a detectar
  
 El objetivo es crear una canalizacion end2end para hacer las predicciones en tiempo real cuando se introduzcan los datos del paciente, y poder re-entrenar el modelo utilizando scripts cuando se presenten una cantidad considerable de nuevos datos o cuando el modelo empiece a degradarse.
 
-Si bien los Jupyter notebooks son excelentes para explorar y compartir datos, generalmente se consideran que **"No son para produccion"** debido a las dificultades de integración con la arquitectura de un software y a la naturaleza de investigacion por celdas de los notebooks, además que no son adecuados para implementarlos en un endpoint, como una API y mantenerla con las mejores prácticas de DevOps. De cara a estas complicaciones debemos convertir estos cuadernos en scripts, y hacer el codigo modular, para que sea facilmente utilizable y automatizable, este proyecto es un ejemplo sencillo de cómo podría ser la ejecución de un modelo 'en producción' utilizando Azure Cloud. Mediante la incorporación de cuatro pilares de ingeniería de software sólida:
+Si bien los Jupyter notebooks son excelentes para explorar y compartir datos, generalmente se consideran que **"No son para produccion"** debido a que su naturaleza es enfocada en investigacion y ejecución por celdas; los notebooks las dificultades de integración con una arquitectura de software sólida , además que, no son la mejor opción para ser implementados en un endpoint, (como una API) y que sea facil y automatizable su mantenimiento con las mejores prácticas de DevOps. 
+
+Para solucionar estas complicaciones debemos convertir estos cuadernos en scripts, hacer el codigo modular para que sea facilmente automatizable, utilizando herramientas MlOps, este proyecto es un ejemplo sencillo de cómo podría ser la ejecución de un modelo 'en producción' utilizando servicios cloud de Azure. 
+
+Mediante la incorporación de cuatro pilares de proyectos de Software Sólidos:
 
 - Control de versiones
 - Código modular
