@@ -7,7 +7,7 @@ Se trata de un modelo de clasificación que ayuda a los profesionales a detectar
 
 ## Arquitectura
 
-![Arquitectura](arq.png)
+![Arquitectura](media/arq.png)
 
 1. Configuración: creación de todos los recursos de Azure necesarios para la solución.
 
