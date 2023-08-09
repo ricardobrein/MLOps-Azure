@@ -1,0 +1,14 @@
+name: Verificación de código
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  code_verification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verificación de código
+        run: |
+          echo "Realizará comprobaciones de código aquí en el próximo desafío"
