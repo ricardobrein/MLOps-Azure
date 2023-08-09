@@ -1,13 +1,18 @@
-# MLOps-Azure, creando una canalización de un modelo a produccion
+# MLOps-Azure, creando una canalización de un modelo a producción con Azure Machine Learning y GitHub Actions
+
+## Introducción
 
 [Machine Learning Operations (MLOps)](https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment?view=azureml-api-2) se basa en los principios y prácticas de DevOps que aumentan la eficiencia en el despliegue y el flujo de trabajo en modelos de Machine Learning en producción.
 
 Este repositorio contiene el código y las pautas para configurar el flujo de trabajo de MLOps con Azure:
 Se trata de un modelo de clasificación que ayuda a los profesionales a detectar posibles casos de diabetes teniendo en cuenta ciertos datos tomados del paciente.
- 
+
+## Arquitectura
+
 El objetivo es crear una canalizacion end2end para hacer las predicciones en tiempo real cuando se introduzcan los datos del paciente, y poder re-entrenar el modelo utilizando scripts cuando se presenten una cantidad considerable de nuevos datos o cuando el modelo empiece a degradarse.
 
 Si bien los Jupyter notebooks son excelentes para explorar y compartir datos, generalmente se consideran que **"No son para produccion"** debido a que su naturaleza es enfocada en investigacion y ejecución por celdas; los notebooks las dificultades de integración con una arquitectura de software sólida , además que, no son la mejor opción para ser implementados en un endpoint, (como una API) y que sea facil y automatizable su mantenimiento con las mejores prácticas de DevOps. 
+
 
 Para solucionar estas complicaciones debemos convertir estos cuadernos en scripts, hacer el codigo modular para que sea facilmente automatizable, utilizando herramientas MlOps, este proyecto es un ejemplo sencillo de cómo podría ser la ejecución de un modelo 'en producción' utilizando servicios cloud de Azure. 
 
@@ -18,7 +23,15 @@ Mediante la incorporación de cuatro pilares de proyectos de Software Sólidos:
 - Pruebas unitarias y de integración
 - CI/CD
 
-## Pronto mas detalles.
+## To Do
+
+- [x] Crear un modelo de Machine Learning
+- [x] Crear un repositorio en GitHub
+- [x] Crear un entorno de desarrollo local
+- [x] Crear un entorno de desarrollo en Azure
+- [x] Crear un entorno de producción en Azure
+- [x] Crear un pipeline de CI/CD con GitHub Actions
+- [x] Crear un pipeline de CI/CD con Azure Machine Learning y GitHub Actions
 
 
 
