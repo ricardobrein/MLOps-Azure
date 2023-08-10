@@ -1,5 +1,4 @@
 pytest
 mlflow
 pandas
-sklearn
 scikit-learn
