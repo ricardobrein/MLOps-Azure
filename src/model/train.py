@@ -65,14 +65,16 @@ def get_csvs_df(path):
         raise RuntimeError(f"Cannot use non-existent path provided: {path}")
     csv_files = glob.glob(f"{path}/*.csv")
     if not csv_files:
-        raise RuntimeError(f"No hay ningun CSV en la ruta especificada: {path}")
+        raise RuntimeError(f"No hay ningun CSV: {path}")
     return pd.concat((pd.read_csv(f) for f in csv_files), sort=False)
 
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--training_data", dest='training_data', type=str)
-    parser.add_argument("--reg_rate", dest='reg_rate', type=float, default=0.01)
+    parser.add_argument("--reg_rate",
+                        dest='reg_rate',
+                        type=float, default=0.01)
     args = parser.parse_args()
     return args
 
