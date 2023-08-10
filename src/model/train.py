@@ -9,6 +9,8 @@ import mlflow
 import mlflow.sklearn
 
 # Particionar los datos en entrenamiento y prueba
+
+
 def split_data(df):
     X = df[['Pregnancies', 'PlasmaGlucose', 'DiastolicBloodPressure',
             'TricepsThickness', 'SerumInsulin',
