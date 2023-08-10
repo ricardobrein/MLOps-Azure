@@ -25,7 +25,7 @@ def split_data(df):
 
 
 def train_model(reg_rate, X_train, y_train):
-    model = LogisticRegression(C=1/reg_rate, solver="liblinear")
+    model = LogisticRegression(C=1, solver="liblinear")
     model.fit(X_train, y_train)
     return model
 
