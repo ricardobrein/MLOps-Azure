@@ -25,5 +25,5 @@ jobs:
         
       - name: Ejecutar pruebas unitarias
         run: |
-          pytest tests/test_main.py
+          pytest tests/
 
