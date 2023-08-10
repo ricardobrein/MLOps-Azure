@@ -22,5 +22,6 @@ jobs:
         run: pip install -r requirements.txt
         
       - name: Ejecutar pruebas unitarias
-        run: pytest test_main.py
+        run: |
+          pytest test_main.py
 
