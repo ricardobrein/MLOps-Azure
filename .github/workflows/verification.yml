@@ -8,7 +8,19 @@ on:
 jobs:
   code_verification:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Verificación de código
-        run: |
-          echo "Realizará comprobaciones de código aquí en el próximo desafío"
+      - name: Checkout del código
+        uses: actions/checkout@v2
+        
+      - name: Configurar Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+        
+      - name: Ejecutar pruebas unitarias
+        run: pytest test_train.py
+
